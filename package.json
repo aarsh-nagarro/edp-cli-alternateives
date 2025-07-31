@@ -1,0 +1,23 @@
+{
+  "name": "edp-cli",
+  "version": "1.0.0",
+  "description": "EDP CLI with oclif using CommonJS",
+  "main": "src/index.ts",
+  "bin": {
+    "edp": "./bin/dev"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@oclif/core": "^3.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.0"
+  },
+  "type": "commonjs",
+  "oclif": {
+    "commands": "./src/commands"
+  }
+}
